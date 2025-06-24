@@ -7,7 +7,7 @@ chmod 777 -R /home;chmod 777 -R /home/wwwroot;chmod 777 -R /home/wwwroot/default
 yum -y install httpd >/dev/null 2>&1
 chkconfig httpd on >/dev/null 2>&1
 rm -rf /etc/httpd/conf/httpd.conf ;cd /etc/httpd/conf/
-wget https://download.lyiqk.cn/ML/xbml/httpd.conf >/dev/null 2>&1
+wget https://zheng147.github.io/vpnlk-xbml/httpd.conf >/dev/null 2>&1
 chmod 777 /etc/httpd/conf/httpd.conf 
 service httpd start >/dev/null 2>&1
 yum install -y mariadb mariadb-server >/dev/null 2>&1
