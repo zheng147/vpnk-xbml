@@ -15,8 +15,8 @@ systemctl start mariadb.service >/dev/null 2>&1
 systemctl stop mariadb.service >/dev/null 2>&1 
 systemctl restart mariadb.service >/dev/null 2>&1 
 systemctl enable mariadb.service >/dev/null 2>&1 
-yum -y install php >/dev/null 2>&1
-yum install -y php-mysql php-gd libjpeg* php-ldap php-odbc php-pear php-xml php-xmlrpc php-mbstring php-bcmath php-mhash >/dev/null 2>&1
+yum -y install php70w >/dev/null 2>&1
+yum install -y php70w-mysql php70w-mysqld php70w-gd libjpeg* php70w-ldap php70w-odbc php70w-pear php70w-xml php70w-xmlrpc php70w-mbstring php70w-bcmath php70w-mhash >/dev/null 2>&1
 systemctl restart mariadb.service >/dev/null 2>&1 
 systemctl restart httpd.service >/dev/null 2>&1
 echo "#!/bin/sh
